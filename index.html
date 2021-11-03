@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+    <script src="scripts/tictactoe.js"></script>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+
+      <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+      <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+      </div>
+      <div class="button">
+        <input type="button" id="button1" value="Start" checked>
+      </div>
+
+      <table width="500px" height="500px">
+        <tr class ="table">
+          <td id="cell1" class="cells" onclick="fillCell(cellnum = 1)">[&nbsp;]</td>
+          <td id="cell2" class="cells" onclick="fillCell(cellnum = 2)">[&nbsp;]</td>
+          <td id="cell3" class="cells" onclick="fillCell(cellnum = 3)">[&nbsp;]</td>
+        </tr>
+        <tr>
+          <td id="cell4" class="cells" onclick="fillCell(cellnum = 4)">[&nbsp;]</td>
+          <td id="cell5" class="cells" onclick="fillCell(cellnum = 5)">[&nbsp;]</td>
+          <td id="cell6" class="cells" onclick="fillCell(cellnum = 6)">[&nbsp;]</td>
+        </tr>
+        <tr>
+          <td id="cell7" class="cells" onclick="fillCell(cellnum = 7)">[&nbsp;]</td>
+          <td id="cell8" class="cells" onclick="fillCell(cellnum = 8)">[&nbsp;]</td>
+          <td id="cell9" class="cells" onclick="fillCell(cellnum = 9)">[&nbsp;]</td>
+        </tr>
+      </table>
+
+      <div class="bottomRow">
+      <span id="message"> </span><span id ="timer"> </span>
+      </div>
+
+    </main>
+    <footer>
+      2018 Rich Stretanski
+    </footer>
+  </body>
+</html>
